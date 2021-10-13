@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        body {
+            background-color: #c8d8e4 !important;
+            color: #000066 !important;
+        }
+
+        .navbar {
+            color: #000066;
+            padding-left: 250px !important;
+            padding-right: 240px !important;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <title>Abhinav's Portfolio</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center text-dark pt-5">
+                <h1 style="font-family: 'Bonheur Royale',cursive; color:  #000066; font-size:50px;">
+                    < Abhinav Yadav />
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light center">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a></h5>
+                            </li>
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link" href="{% url 'education' %}">Education</a></h5>
+                            </li>
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link" href="{% url 'experience' %}">Experience</a></h5>
+                            </li>
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link" href="{% url 'projects' %}">Projects</a></h5>
+                            </li>
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link active" href="{% url 'contact' %}">Contact Me</a></h5>
+                            </li>
+                            <li class="nav-item px-2">
+                                <h5><a class="nav-link" href="{% url 'signup' %}">Signup/Login</a></h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-6 text-center"></div>
+            <div class="col-md-6 text-center">
+                <h1>Contact</h1>
+                <p style="font-size: 20px;">I am available on almost every social media. You can message me, I will reply within 24 hours. I can
+                    help you with Webdevelopment, AI, React, Android, Cloud and Opensource Development.</p>
+                    <section>
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-facebook" style="color: rgb(11, 47, 124);"></i>
+                        </a>
+              
+                        <!-- Twitter -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-twitter" style="color: rgb(0, 160, 253);"></i></a>
+              
+                        <!-- Google -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-google " style="color: rgb(194, 0, 0);"></i></a>
+              
+                        <!-- Instagram -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-instagram" style="color: purple;"></i></a>
+              
+                        <!-- Linkedin -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-linkedin" style="color: rgb(12, 60, 165);"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-link btn-floating btn-lg" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                            class="bi bi-github" style="color: black;"></i></a>
+                      </section>
+                      <br>
+                      <a href="#" class="btn text-light" style="background-color: blueviolet;">See My Resume</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'img/address.svg' %}" alt="" height="400" />
+            </div>
+            <div class="col-md-6 text-center pt-5">
+                <h1>Address</h1>
+                <p style="font-size: 20px;">EWS-167 New Subhash nagar, Bhopal(MP)</p>
+                <h1>Phone number</h1>
+                <p style="font-size: 20px;">+91 6266928012</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <footer class="text-center text-muted" style="font-size: 25px;">
+                Made by Abhinav from ❤️
+            </footer>
+        </div>
+        <br><br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
